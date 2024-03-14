@@ -1,0 +1,436 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+
+}
+
+img {
+	max-width: 100%;
+	/* ban за span  */
+
+}
+
+/* работа над стили хедер */
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main {
+    background-size: cover;
+	background-image: url('img_and_ava/bg.jpg');
+	background-repeat: no-repeat;
+	padding-top: 60px;
+	padding-bottom: 99px;
+	position: relative;
+	isolation: isolate;
+}
+
+.main::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.logo {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.menu {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 60px;
+	justify-content: center;
+
+}
+
+.menu a {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 14px;
+	/* 127.273% */
+	letter-spacing: 1.3px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.5s;
+	position: relative;
+}
+
+.menu a::before {
+	content: '';
+	display: inline-block;
+	width: 0%;
+	height: 2px;
+	transition: all 500ms;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: rgb(255, 255, 255);
+}
+
+
+
+.menu a:hover::before {
+	width: 100%;
+}
+
+.name {
+	color: #FFF;
+	font-size: 18px;
+	line-height: 19px;
+}
+
+.date {
+	color: #FFF;
+
+	font-family: Lato;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.p {
+	color: #FFF;
+
+	font-family: Montserrat;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+	max-width: 470px;
+
+}
+
+.img-text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/* background-color: gold; */
+	padding-left: 60px;
+	padding-bottom: 40px;
+	width: 100%;
+	/*2+2=5*/
+}
+
+.card-img {
+	position: relative;
+}
+
+.information {
+	display: flex;
+	gap: 14px;
+	margin-bottom: 20px;
+}
+
+.card-text {
+	color: rgb(51, 51, 51);
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 25px;
+	background-color: #FFF;
+	padding: 36px 76px 44px 60px;
+	/* 🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿🗿 */
+}
+
+
+.read-more {
+	background: rgb(241, 241, 241);
+	padding: 49px 0 60px 0;
+	text-align: center;
+}
+
+.read-more p {
+	color: rgb(51, 51, 51);
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: 0%;
+	text-align: center;
+	margin-bottom: 21px;
+}
+
+.read-more a {
+	border-radius: 3px;
+	background: rgb(141, 79, 219);
+	color: rgb(255, 255, 255);
+	font-family: Montserrat;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 8px 25px;
+	transition: all 1s;
+}
+
+.read-more a:hover {
+	box-shadow: 5px 5px 5px rgb(92, 44, 151);
+}
+
+/* footer stayle start 2+2=? I don't know it very hard*/
+.footer {
+	background-color: black;
+	padding-top: 55px;
+	padding-bottom: 45px;
+}
+
+.footer p {
+	color: rgb(139, 139, 139);
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.footer p a {
+	color: rgb(141, 79, 219);
+	font-family: Lato;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0%;
+	text-align: center;
+	text-decoration: none;
+	/* napishi pls position absolut comu nado nu k ty swoboden a ne position realiti napyshi */
+	position: relative;
+
+}
+
+.footer a::before {
+	content: "";
+	display: block;
+	width: 0%;
+	height: 0%;
+	background-color: rgb(141, 79, 219);
+	;
+	/* napishi pls position absolut comu nado */
+	transition: all 1s;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+
+}
+
+.footer a:hover::before {
+	width: 100%;
+	height: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px rgb(141, 79, 219);
+}
+
+.burger {
+	display: none;
+	color: white;
+	font-size: 20px;
+}
+.explorer {
+	overflow: hidden;
+}
+
+
+@media (max-width:650px) {
+	.burger {
+		display: block;
+	}
+
+	.menu {
+		background: #4a453d;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		margin: 0;
+		width: 120%;
+		flex-direction: column;
+		padding-bottom: 30px;
+		z-index: 10;
+		transform: translateX(120%);
+		transition: all 1s;
+	}
+	.menu.open {
+		transform: translateX(0);
+	}
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	.card-text {
+		font-size: 15px;
+		padding: 25px;
+		
+	}
+	.img-text {
+		padding: 20px;
+	}
+	.p {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.menu a {
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.information {
+		margin-bottom:5px;
+	}
+}
+@media (max-width:430px) {
+ .card-img > img {
+	height: 165px;
+	object-fit: cover;
+ }
+}
+
